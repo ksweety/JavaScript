@@ -1,0 +1,23 @@
+h1 {
+    font-style: italic;
+}
+.centering {
+    text-align: center;
+} 
+
+#digits {
+    text-align: center; 
+    font-style: italic;
+} 
+
+button{ 
+    margin: 5px 3px 10px 5px; 
+    padding: 5px 10px;
+    border-radius: 7px;
+    background-color: darkorchid
+
+} 
+
+body {
+    background-image: ;
+}
