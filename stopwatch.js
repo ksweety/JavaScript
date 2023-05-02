@@ -8,8 +8,7 @@ let startButton = document.getElementById('start-btn')
 let interval;
 function start () {   
     startButton.disabled = true
-    
-    alert("You clicked the start button") 
+
 
    interval = setInterval(function () {
         milliseconds = milliseconds +10 
@@ -25,7 +24,8 @@ function start () {
     }, 10)
 } 
 function stop () {
-    clearInterval(interval)
+    clearInterval(interval) 
+    startButton.disabled = false
 }
 
 function reset () {
@@ -34,4 +34,14 @@ milliseconds=0
 seconds= 0 
 minutes = 0 
 digits.innerHTML= "00:00:00"
+const laplist = document.getElementById("lapList1")
+laplist.innerHTML = ""
+
+}  
+function addlap(){
+    let newListItem = document.createElement("li") 
+    newListItem.textContent = digits.textContent 
+    const laplist = document.getElementById("lapList1")   
+    laplist.appendChild(newListItem)
 }
+
