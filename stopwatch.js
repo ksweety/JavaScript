@@ -2,11 +2,13 @@ let seconds = 0
 let milliseconds = 0
 let minutes = 0 
 let digits = document.getElementById("digits") 
+let startButton = document.getElementById('start-btn') 
+
 
 let interval;
-function start () {  
-    reset()
-
+function start () {   
+    startButton.disabled = true
+    
     alert("You clicked the start button") 
 
    interval = setInterval(function () {
