@@ -14,13 +14,15 @@ button{
     margin: 5px 3px 10px 5px; 
     padding: 5px 10px;
     border-radius: 7px;
-    background-color: darkorchid
+    background-color: rgb(50, 122, 204);
 
 } 
 
 body { 
     background-color: orchid;
-    font-size: 60px;
+    font-size: 60px; 
+    font-family: ;
+    background-image: url(stopwatch-8-gif-download-stopwatch-gif-animation.gif);
 } 
 
 button:active {
