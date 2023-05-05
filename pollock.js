@@ -3,8 +3,8 @@ let myCanvas = document.getElementById("myCanvas")
 paper.setup(myCanvas) 
 
 function drawCircle (e) { 
-    console.log(e.x, e.y)  
-    If (isMouseDowm)  
+    console.log(e)  
+    if (isMouseDown){  
     let circle = new paper.Path.Circle({
         radius: Math.random() * 30, 
         center: {
@@ -21,18 +21,19 @@ function drawCircle (e) {
  
  
 circle.fillColor= "rgb("+red + "," + green + "," + blue +")"
-    
+}
 } 
-
+myCanvas.addEventListener("mousemove", drawCircle)
 
 let isMouseDown = false
 
-function mouseDownn() {
+function mouseDown() {
     isMouseDown = true
 }  
 
 function mouseUp() {
     isMouseDown= false
 }
-myCanvas.addEventListener("mousedown", drawCircle) 
+
+myCanvas.addEventListener("mousedown", mouseDown) 
 myCanvas.addEventListener("mouseup", mouseUp)
